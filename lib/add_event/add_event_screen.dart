@@ -254,6 +254,7 @@ class _AddEventScreenState extends State<AddEventScreen> {
                             eventCategoryId: categories[currentIndex].id,
                             categoryImg: categories[currentIndex].image);
                         FirebaseUtils.addEvent(data);
+                        Navigator.pop(context, data);
                       }
 
                     },
